@@ -1,0 +1,15 @@
+.navbar {
+  display: grid;
+  grid-template: 4rem 3rem /15vw auto 15vw;
+  grid-template-areas: "menu logo login" "search search search";
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (min-width: 560px) {
+  .navbar {
+    grid-template: 10vw auto/ 25vw auto 25vw;
+    grid-template-areas: "login logo search" "menu menu menu";
+  }
+}

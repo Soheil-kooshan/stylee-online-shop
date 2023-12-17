@@ -1,0 +1,25 @@
+input {
+  width: 90%;
+  height: 2rem;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 3px;
+  outline-style: none;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  color: darkslategrey;
+  grid-area: search;
+  font-size: 0.9rem;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+@media screen and (min-width: 560px) {
+  input {
+    height: 2.5rem;
+    font-size: 1rem;
+    border-bottom: rgb(152, 151, 151) solid 1px;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}

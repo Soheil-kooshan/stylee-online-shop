@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #222;
+  color: #aaa;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template: auto auto/auto auto;
+}
+
+.footer ul {
+  padding: 2rem 2rem 1rem 0;
+}
+
+.footer ul li:first-child {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.footer li {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.footer img {
+  width: 1.5rem;
+  fill: aliceblue;
+}
+
+@media screen and (min-width: 760px) {
+  .footer {
+    grid-template: auto/auto auto auto auto;
+  }
+
+  .footer ul:first-child {
+    padding-right: 4rem;
+  }
+}

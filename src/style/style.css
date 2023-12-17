@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "yekan";
+  src: url("src/style/fonts/Vazir.woff") format("woff"),
+    url("src/style/fonts/Vazir.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "yekan";
+  direction: rtl;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+}

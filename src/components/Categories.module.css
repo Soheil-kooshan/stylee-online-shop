@@ -1,0 +1,7 @@
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}

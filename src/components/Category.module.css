@@ -1,0 +1,26 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.category img {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 7vw;
+  object-fit: cover;
+}
+
+.category span {
+  padding: 0.4rem;
+}
+
+@media screen and (min-width: 560px) {
+  .category img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+  }
+}
