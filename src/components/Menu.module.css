@@ -22,7 +22,7 @@
 }
 
 .mob_menu {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   top: 0;
   right: 0;

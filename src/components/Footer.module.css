@@ -19,11 +19,13 @@
 .footer ul li:first-child {
   font-weight: 700;
   padding-bottom: 0.5rem;
+  cursor: default;
 }
 
 .footer li {
   padding-top: 1rem;
   list-style: none;
+  cursor: pointer;
 }
 
 .footer img {

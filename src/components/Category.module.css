@@ -4,6 +4,13 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+  filter: contrast(1);
+  transition: filter 0.5s;
+  cursor: pointer;
+}
+
+.category:hover {
+  filter: contrast(1.5);
 }
 
 .category img {
