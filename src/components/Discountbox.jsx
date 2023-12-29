@@ -1,7 +1,25 @@
 import "./Discountbox.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { register } from "swiper/element/bundle";
+import discountProducts from "../services/discounthandling";
 function Discountbox() {
+  const [prods, setProds] = useState([]);
+
+  useEffect(function () {
+    async function getdata() {
+      const data = await discountProducts();
+      setProds(data);
+    }
+    getdata();
+  }, []);
+
+  function discountCalculator(prod) {
+    const newPrice = Math.round(
+      (prod.price / 1000) * ((100 - prod.discount) / 100)
+    );
+    return newPrice * 1000;
+  }
+
   register();
   const swiperRef = useRef(null);
   useEffect(() => {
@@ -88,94 +106,27 @@ function Discountbox() {
               ref={swiperRef}
               init="false"
             >
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
-              <swiper-slide class="swiper-slide">
-                <li>
-                  <img
-                    className="image"
-                    src="src/assets/photos/clothes/jacket/3.webp"
-                    alt="item"
-                  />
-                  <span className="price">1200000</span>
-                  <span className="preprice">1300000</span>
-                </li>
-              </swiper-slide>
+              {prods.map((prod) => {
+                return (
+                  <swiper-slide class="swiper-slide" key={prod.src}>
+                    <li>
+                      <img
+                        className="image"
+                        src={prod.imgSrc}
+                        alt={prod.name}
+                      />
+                      <span className="price">
+                        {discountCalculator(prod)} T
+                      </span>
+                      {prod.discount !== null ? (
+                        <span className="preprice">{prod.price}</span>
+                      ) : (
+                        ""
+                      )}
+                    </li>
+                  </swiper-slide>
+                );
+              })}
             </swiper-container>
           </>
         </ul>
@@ -185,14 +136,3 @@ function Discountbox() {
 }
 
 export default Discountbox;
-{
-  /* <li className={styles.item}>
-<img
-  className={styles.image}
-  src="src\assets\photos\clothes\jacket\2.webp"
-  alt="item"
-/>
-<span className={styles.price}>1200000</span>
-<span className={styles.preprice}>1300000</span>
-</li> */
-}

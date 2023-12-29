@@ -8,6 +8,7 @@ import "./style/style.css";
 import React from "react";
 import Categories from "./components/Categories";
 function App() {
+  console.log(discountProducts());
   return (
     <div>
       <Navbar />
