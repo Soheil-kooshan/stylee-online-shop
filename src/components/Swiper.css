@@ -16,15 +16,16 @@
 
 .swiper-slide li {
   display: flex;
+  position: relative;
   flex-direction: column;
   border: 1px solid #bbb;
   border-radius: 5px;
   min-width: 5rem;
   max-width: 12rem;
+  padding-bottom: 1.5rem;
 }
 
 .image {
-  height: fit-content;
   border-radius: 10px;
   cursor: pointer;
   padding: 0.4rem;
@@ -36,6 +37,8 @@
 }
 
 .preprice {
+  position: absolute;
+  bottom: 0;
   font-size: 1rem;
   padding: 0 0 0.5rem 2rem;
   text-decoration: line-through;
