@@ -117,8 +117,12 @@ function Swiper(props) {
                       <span className="price">
                         {discountCalculator(prod)} T
                       </span>
+
                       {prod.discount !== null ? (
-                        <span className="preprice">{prod.price}</span>
+                        <span>
+                          <span className="preprice">{prod.price}</span>
+                          <span className="badge">{prod.discount}%</span>
+                        </span>
                       ) : (
                         ""
                       )}

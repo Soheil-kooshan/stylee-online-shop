@@ -45,6 +45,17 @@
   color: #888;
 }
 
+.badge {
+  font-size: 0.7rem;
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+  background-color: rgb(215, 5, 5);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+}
+
 .label {
   justify-content: center;
   align-items: center;
