@@ -1,16 +1,15 @@
-import "./Discountbox.css";
+import "./Swiper.css";
 import { useEffect, useRef, useState } from "react";
 import { register } from "swiper/element/bundle";
-import discountProducts from "../services/discounthandling";
-function Discountbox() {
+function Swiper(props) {
   const [prods, setProds] = useState([]);
 
   useEffect(function () {
-    async function getdata() {
-      const data = await discountProducts();
+    async function setdata() {
+      const data = await props.data();
       setProds(data);
     }
-    getdata();
+    setdata();
   }, []);
 
   function discountCalculator(prod) {
@@ -95,7 +94,7 @@ function Discountbox() {
       <div className="box">
         <div className="label">
           <div className="line"></div>
-          <span>تخفیف های ویژه</span>
+          <span>{props.name}</span>
           <div className="line"></div>
           <div />
         </div>
@@ -135,4 +134,4 @@ function Discountbox() {
   );
 }
 
-export default Discountbox;
+export default Swiper;
