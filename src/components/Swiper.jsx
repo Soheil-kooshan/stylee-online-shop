@@ -1,13 +1,15 @@
 import "./Swiper.css";
 import { useEffect, useRef, useState } from "react";
 import { register } from "swiper/element/bundle";
+
 function Swiper(props) {
   const [prods, setProds] = useState([]);
 
   useEffect(function () {
     async function setdata() {
       const data = await props.data();
-      setProds(data);
+
+      setProds(data.slice(0, 15));
     }
     setdata();
   }, []);
