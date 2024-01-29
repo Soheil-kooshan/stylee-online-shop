@@ -1,8 +1,3 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
 import "./Slider.css";
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
@@ -20,42 +15,6 @@ const slides = [
     alt: "jackets",
   },
 ];
-// function Slider() {
-//   return (
-//     <>
-//       <div className="container">
-//         <Swiper
-//           reverseDirection={true}
-//           autoplay={{
-//             delay: 7000,
-//             disableOnInteraction: false,
-//           }}
-//           slidesPerView={1}
-//           spaceBetween={0}
-//           loop={true}
-//           pagination={{
-//             clickable: true,
-//           }}
-//           navigation={true}
-//           modules={[Autoplay, Pagination, Navigation]}
-//           className="mySwiper"
-//         >
-//           <SwiperSlide>
-//             <img src={slides[0].src} alt={slides[0].alt} />
-//           </SwiperSlide>
-//           <SwiperSlide>
-//             <img src={slides[1].src} alt={slides[1].alt} />
-//           </SwiperSlide>
-//           <SwiperSlide>
-//             <img src={slides[2].src} alt={slides[2].alt} />
-//           </SwiperSlide>
-//         </Swiper>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Slider;
 
 register();
 
