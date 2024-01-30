@@ -28,8 +28,24 @@ function Menu() {
               />
             </div>
             <ul>
-              <li>مردانه</li>
-              <li>زنانه</li>
+              <li>
+                مردانه
+                <ul className={styles.mob_sub_menu}>
+                  <li>کاپشن</li>
+                  <li>تیشرت</li>
+                  <li>شلوار</li>
+                  <li>پیراهن</li>
+                  <li>کمربند</li>
+                </ul>
+              </li>
+              <li>
+                زنانه
+                <ul className={styles.mob_sub_menu}>
+                  <li>کاپشن</li>
+                  <li>تیشرت</li>
+                  <li>شلوار</li>
+                </ul>
+              </li>
               <li>بچه گانه</li>
               <li>درباره ما</li>
               <li>تماس با ما</li>

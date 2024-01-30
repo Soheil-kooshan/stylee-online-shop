@@ -15,11 +15,13 @@
 .desk_menu ul ul {
   display: block;
   opacity: 0;
-  transition: all 0.5s;
+  translate: 1rem -1rem;
+  transition: all 0.3s;
 }
 
 .desk_menu ul li:hover > ul {
   display: block;
+  translate: 1rem 0.9rem;
   opacity: 100;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .desk_menu li:hover {
-  color: red;
+  color: rgb(229, 13, 13);
 }
 .desk_menu img {
   display: inline;
@@ -42,7 +44,6 @@
   background-color: #fff;
   font-size: 1rem;
   color: #333;
-  translate: 1rem 0.9rem;
 }
 
 .desk_sub_menu li {
@@ -62,6 +63,7 @@
   width: 40vw;
   background-color: rgb(247, 247, 237);
   z-index: 999;
+  box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.6);
 }
 
 .mob_menu ul {
@@ -74,6 +76,28 @@
 
 .mob_menu li {
   padding: 1rem 2rem 1rem 0;
+}
+
+.mob_menu ul ul {
+  display: none;
+}
+
+.mob_menu ul li:hover > ul {
+  display: block;
+}
+
+.mob_menu ul li:hover {
+  background-color: rgb(230, 230, 225);
+}
+
+.mob_sub_menu {
+  position: absolute;
+  color: #333;
+  background-color: rgb(230, 230, 225);
+  left: -25vw;
+  top: 0;
+  width: 25vw;
+  box-shadow: -20px 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .close {
