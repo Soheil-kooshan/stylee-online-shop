@@ -24,19 +24,25 @@
 .desk_menu span {
   cursor: pointer;
   padding: 0.5rem 1rem;
+  display: flex;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center; */
 }
 
 .desk_menu li:hover {
   color: red;
 }
+.desk_menu img {
+  display: inline;
+}
 
 .desk_sub_menu {
   position: absolute;
-  z-index: 1;
   background-color: #fff;
-  translate: 1.7rem -0.5rem;
   font-size: 1rem;
   color: #333;
+  translate: 1rem 0.9rem;
 }
 
 .desk_sub_menu li {
