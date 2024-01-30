@@ -13,11 +13,14 @@
   padding: 0;
 }
 .desk_menu ul ul {
-  display: none;
+  display: block;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .desk_menu ul li:hover > ul {
   display: block;
+  opacity: 100;
 }
 
 .desk_menu li,
@@ -25,9 +28,6 @@
   cursor: pointer;
   padding: 0.5rem 1rem;
   display: flex;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: center; */
 }
 
 .desk_menu li:hover {
