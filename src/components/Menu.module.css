@@ -2,6 +2,7 @@
   display: none;
   grid-area: menu;
   font-size: 1.3rem;
+  z-index: 3;
 }
 .desk_menu ul {
   display: flex;
@@ -11,14 +12,40 @@
   margin-top: 1rem;
   padding: 0;
 }
+.desk_menu ul ul {
+  display: none;
+}
 
-.desk_menu li {
+.desk_menu ul li:hover > ul {
+  display: block;
+}
+
+.desk_menu li,
+.desk_menu span {
   cursor: pointer;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .desk_menu li:hover {
   color: red;
+}
+
+.desk_sub_menu {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  translate: 1.7rem -0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.desk_sub_menu li {
+  padding: 0.7rem 2rem;
+}
+
+.desk_sub_menu li:hover {
+  background-color: rgba(243, 243, 243, 0.921);
+  transition: all 0.5s;
 }
 
 .mob_menu {

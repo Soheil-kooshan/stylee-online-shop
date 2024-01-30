@@ -39,14 +39,33 @@ function Menu() {
       )}
 
       <div className={styles.desk_menu}>
-        <ul>
-          <li>مردانه</li>
-          <li>زنانه</li>
-          <li>بچه گانه</li>
-          <span>|</span>
-          <li>درباره ما</li>
-          <li>تماس با ما</li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              مردانه
+              <ul className={styles.desk_sub_menu}>
+                <li>کاپشن</li>
+                <li>تیشرت</li>
+                <li>شلوار</li>
+                <li>پیراهن</li>
+                <li>کمربند</li>
+              </ul>
+            </li>
+
+            <li>
+              زنانه
+              <ul className={styles.desk_sub_menu}>
+                <li>کاپشن</li>
+                <li>تیشرت</li>
+                <li>شلوار</li>
+              </ul>
+            </li>
+            <li>بچه گانه</li>
+            <span>|</span>
+            <li>درباره ما</li>
+            <li>تماس با ما</li>
+          </ul>
+        </nav>
       </div>
     </>
   );
