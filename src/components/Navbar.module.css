@@ -5,6 +5,8 @@
   justify-items: center;
   align-items: center;
   position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.529);
+  z-index: 999;
 }
 
 @media screen and (min-width: 560px) {
