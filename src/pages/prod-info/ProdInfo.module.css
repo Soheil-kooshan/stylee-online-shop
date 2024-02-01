@@ -57,6 +57,7 @@
   }
 
   .container .info {
+    font-size: larger;
     min-width: 30rem;
     padding-top: 3rem;
   }

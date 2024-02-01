@@ -14,14 +14,15 @@
 }
 .desk_menu ul ul {
   display: block;
+  visibility: hidden;
   opacity: 0;
   translate: 1rem -1rem;
   transition: all 0.3s;
 }
 
 .desk_menu ul li:hover > ul {
-  display: block;
   translate: 1rem 0.9rem;
+  visibility: visible;
   opacity: 100;
 }
 
