@@ -1,4 +1,4 @@
-import Swiper from "./Swiper";
+import Swiper from "../../components/Swiper";
 import Navbar from "../../components/navbar";
 import Categories from "./Categories";
 import Slider from "./Slider";

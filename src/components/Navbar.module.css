@@ -13,5 +13,6 @@
   .navbar {
     grid-template: 10vw auto/ 25vw auto 25vw;
     grid-template-areas: "login logo search" "menu menu menu";
+    
   }
 }
