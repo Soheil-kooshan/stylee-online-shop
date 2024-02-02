@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
   margin-top: 2rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .container img {
@@ -17,7 +17,7 @@
 }
 
 .name {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .container .price {
@@ -46,13 +46,13 @@
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    min-height: 24rem;
+    min-height: 22rem;
   }
 
   .container img {
     height: 100%;
     width: 35vw;
-    min-width: 20rem;
+    min-width: 16rem;
     object-fit: contain;
   }
   .container div li {
@@ -71,6 +71,7 @@
     font-size: 2rem;
     padding: 1rem;
   }
+  
   .container button {
     position: absolute;
     margin-right: 1rem;

@@ -9,7 +9,6 @@ import newProducts from "../../services/newProducts";
 function Landing() {
   return (
     <div>
-      <Navbar />
       <Slider />
       <Categories />
       <Swiper name="تخفیف های ویژه" data={discountProducts} />
