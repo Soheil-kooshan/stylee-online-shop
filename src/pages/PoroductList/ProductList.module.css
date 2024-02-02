@@ -2,6 +2,11 @@
   direction: ltr;
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
-  border: 1px solid black;
+  width: 100%;
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    width: 75%;
+  }
 }

@@ -1,11 +1,10 @@
 .container {
+  width: 50%;
   direction: ltr;
   display: flex;
   flex-direction: column;
   position: relative;
   border: 1px solid #ebeaea;
-  min-width: 5rem;
-  max-width: 12rem;
   padding-bottom: 1.5rem;
 }
 
@@ -43,4 +42,10 @@
   background-color: rgb(215, 5, 5);
   padding: 0.3rem 0.5rem;
   border-radius: 0.8rem;
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    width: 33.333%;
+  }
 }
