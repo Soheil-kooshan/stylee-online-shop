@@ -1,7 +1,7 @@
-import styles from "./FilterBox.module.css";
+import PriceRange from "./PriceRange";
 
 function FilterBox() {
-  return <div></div>;
+  return <PriceRange />;
 }
 
 export default FilterBox;
