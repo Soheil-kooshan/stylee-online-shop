@@ -1,0 +1,50 @@
+.darkBrown {
+  background-color: rgb(82, 21, 21);
+}
+.brown {
+  background-color: brown;
+}
+.black {
+  background-color: black;
+}
+.green {
+  background-color: rgb(3, 85, 3);
+}
+.navyBlue {
+  background-color: rgb(1, 1, 103);
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: rgb(211, 0, 0);
+}
+.grey {
+  background-color: grey;
+}
+.blue {
+  background-color: rgb(0, 0, 204);
+}
+.beige {
+  background-color: rgb(215, 215, 173);
+}
+.white {
+  background-color: white;
+}
+
+.colorBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem;
+}
+
+.colorBox span {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 0.7rem;
+  margin: 5px 5px;
+}

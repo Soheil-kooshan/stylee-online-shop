@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 10px;
+  margin: 2rem 1rem;
+  padding-top: 2rem;
+}
+
+.container h3 {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  background-color: #fff;
+  color: rgb(47, 45, 45);
+  padding: 10px;
+}
+
+.filterItem {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    width: 30%;
+  }
+}

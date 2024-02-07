@@ -4,6 +4,7 @@ import styles from "./PriceRange.module.css";
 function PriceRange() {
   const [minValue, setMin] = useState(0);
   const [maxValue, setMax] = useState(10000);
+  const [show, setShow] = useState(false);
 
   const showMin = useRef(0);
   const showMax = useRef(10000);
@@ -18,19 +19,16 @@ function PriceRange() {
 
   return (
     <div className={styles.container}>
-      <h4>محدوده قیمت</h4>
-
       <div className={styles.priceContent}>
-        <div>
+        <div className={styles.priceContainer}>
           <label>Min</label>
           <p className={styles.minValue}>{showMin.current}</p>
         </div>
-        <div>
+        <div className={styles.priceContainer}>
           <label>Max</label>
           <p className={styles.maxValue}>{showMax.current}</p>
         </div>
       </div>
-
       <div className={styles.rangeSlider}>
         <div className={styles.rangeFill}></div>
         <input
@@ -54,7 +52,7 @@ function PriceRange() {
             setMax(e.target.value);
           }}
         />
-      </div>
+      </div>{" "}
     </div>
   );
 }

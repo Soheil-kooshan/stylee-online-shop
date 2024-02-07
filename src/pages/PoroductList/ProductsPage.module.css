@@ -1,12 +1,10 @@
 .container {
-  direction: ltr;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 560px) {
   .container {
-    padding: 2rem 0 2rem 2rem;
+    flex-direction: row;
   }
 }
