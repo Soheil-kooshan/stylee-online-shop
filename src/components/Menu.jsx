@@ -68,7 +68,7 @@ function Menu() {
             <li>
               مردانه
               <img
-                src="src\assets\icons\arrow_drop_down_FILL0_wght400_GRAD0_opsz24.svg"
+                src="src\assets\icons\arrow-down-svgrepo-com.svg"
                 alt="arrow"
               />
               <ul className={styles.desk_sub_menu}>
@@ -83,7 +83,7 @@ function Menu() {
             <li>
               زنانه
               <img
-                src="src\assets\icons\arrow_drop_down_FILL0_wght400_GRAD0_opsz24.svg"
+                src="src\assets\icons\arrow-down-svgrepo-com.svg"
                 alt="arrow"
               />
               <ul className={styles.desk_sub_menu}>

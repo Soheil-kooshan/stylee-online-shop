@@ -16,8 +16,13 @@
 }
 
 .filterItem {
+  display: flex;
   padding: 1rem;
   cursor: pointer;
+}
+
+.filterItem img {
+  width: 20px;
 }
 
 .container {
