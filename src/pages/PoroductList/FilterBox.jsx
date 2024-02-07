@@ -8,10 +8,18 @@ function FilterBox() {
   return (
     <div className={styles.container}>
       <h3>فیلتر ها</h3>
-      <p className={styles.filterItem} onClick={() => setShowPrice(!showPrice)}>بر اساس قیمت</p>
+      <p className={styles.filterItem} onClick={() => setShowPrice(!showPrice)}>
+        بر اساس قیمت
+      </p>
       {showPrice && <PriceRange />}
-      <p className={styles.filterItem} onClick={() => setShowColor(!showColor)}>بر اساس رنگ </p>
+      <p className={styles.filterItem} onClick={() => setShowColor(!showColor)}>
+        بر اساس رنگ{" "}
+      </p>
       {showColor && <ColorSelection />}
+      <div className={styles.buttonContainer}>
+        <button>حذف فیلتر</button>
+        <button>اعمال فیلتر</button>
+      </div>
     </div>
   );
 }

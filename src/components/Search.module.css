@@ -1,4 +1,4 @@
-input {
+.search {
   width: 90%;
   height: 2rem;
   background-color: rgb(235, 235, 235);
@@ -15,7 +15,7 @@ input::-webkit-search-cancel-button {
 }
 
 @media screen and (min-width: 560px) {
-  input {
+  .search {
     height: 2.5rem;
     font-size: 1rem;
     border-bottom: rgb(152, 151, 151) solid 1px;

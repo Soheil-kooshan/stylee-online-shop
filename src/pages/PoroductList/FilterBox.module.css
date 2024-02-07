@@ -24,6 +24,23 @@
   margin-top: 2rem;
 }
 
+.buttonContainer {
+  margin: 0 0.5rem;
+}
+
+.buttonContainer button {
+  padding: 0.4rem 0.8rem;
+  margin: 1rem 0.4rem;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid silver;
+  border-radius: 6px;
+}
+.buttonContainer button:last-child {
+  color: #fff;
+  background-color: rgb(55, 148, 55);
+}
+
 @media screen and (min-width: 560px) {
   .container {
     width: 30%;
