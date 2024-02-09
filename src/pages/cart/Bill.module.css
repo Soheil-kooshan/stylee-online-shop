@@ -6,3 +6,21 @@
   border-radius: 8px;
   margin: 1rem;
 }
+
+.container span {
+  padding: 0.5em;
+}
+
+.container :nth-last-child(2) {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.container button {
+  margin: 0 2rem;
+  background-color: rgb(6, 148, 6);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+}
