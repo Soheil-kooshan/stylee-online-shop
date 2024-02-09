@@ -31,3 +31,9 @@
   font-size: 1.1rem;
   padding-top: 1rem;
 }
+
+@media screen and (min-width: 560px) {
+  .container {
+    width: 60vw;
+  }
+}

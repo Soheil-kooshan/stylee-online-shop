@@ -23,4 +23,16 @@
   border: none;
   border-radius: 4px;
   padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: rgb(3, 136, 3);
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    height: fit-content;
+    width: 40%;
+  }
 }
