@@ -13,7 +13,6 @@ function Landing() {
       <Categories />
       <Swiper name="تخفیف های ویژه" data={discountProducts} />
       <Swiper name="آخرین محصولات" data={newProducts} />
-      <Footer />
     </div>
   );
 }

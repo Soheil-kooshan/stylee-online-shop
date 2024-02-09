@@ -5,7 +5,7 @@
   justify-items: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.529);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.299);
   z-index: 999;
 }
 
@@ -13,6 +13,5 @@
   .navbar {
     grid-template: 10vw auto/ 25vw auto 25vw;
     grid-template-areas: "login logo search" "menu menu menu";
-    
   }
 }
