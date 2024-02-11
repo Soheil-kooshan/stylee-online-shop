@@ -15,21 +15,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
-  width: auto;
+  background-color: white;
   height: 60vh;
   position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
   z-index: 999;
-  top: 20vh;
-  right: 20rem;
-  left: 20rem;
+  width: 40vw;
+  min-width: 20rem;
 }
 
 .welcome {
   font-size: 2rem;
   font-weight: 700;
   color: rgb(71, 68, 68);
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .loginBox label {
@@ -37,14 +38,8 @@
   padding: 0.5rem;
 }
 
-.signUpCheck {
-  padding-top: 1rem;
-  font-size: 0.7rem;
-  color: rgb(8, 8, 117);
-}
-
 .loginBox input {
-  padding: 0.3rem;
+  padding: 0.4rem;
   border: 1px solid rgb(226, 226, 226);
   border-radius: 5px;
   outline: none;
@@ -52,4 +47,26 @@
 
 .loginBox input:focus {
   box-shadow: 0 0 5px rgb(190, 190, 236);
+}
+
+.loginBox button {
+  background-color: rgb(7, 143, 7);
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.4rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.loginBox button:hover {
+  background-color: rgb(7, 130, 7);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
 }
