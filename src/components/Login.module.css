@@ -1,4 +1,4 @@
-.login {
+.loginIcon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,4 +7,49 @@
   grid-area: login;
   cursor: pointer;
   padding-top: 0.4rem;
+}
+
+.loginBox {
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: auto;
+  height: 60vh;
+  position: fixed;
+  z-index: 999;
+  top: 20vh;
+  right: 20rem;
+  left: 20rem;
+}
+
+.welcome {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(71, 68, 68);
+  padding-bottom: 4rem;
+}
+
+.loginBox label {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.signUpCheck {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  color: rgb(8, 8, 117);
+}
+
+.loginBox input {
+  padding: 0.3rem;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  outline: none;
+}
+
+.loginBox input:focus {
+  box-shadow: 0 0 5px rgb(190, 190, 236);
 }
