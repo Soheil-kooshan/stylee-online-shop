@@ -1,9 +1,8 @@
-import { useState } from "react";
 import styles from "./Navbar.module.css";
-import Search from "./search";
-import Menu from "./Menu";
-import Logo from "./logo";
-import Login from "./Login";
+import Search from "../components/search";
+import Menu from "../components/Menu";
+import Logo from "../components/logo";
+import Login from "../components/Login";
 
 function Navbar() {
   return (
