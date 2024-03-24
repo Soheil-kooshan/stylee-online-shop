@@ -1,16 +1,14 @@
 import styles from "./Product.module.css";
 
-function Product() {
+function Product({ prod }) {
   return (
     <div className={styles.container}>
-      <img
-        className={styles.image}
-        src="src\assets\photos\clothes\jean\4.webp"
-        alt="t-shirt"
-      />
-      <div className={styles.badge}>13%</div>
-      <div className={styles.name}>اسم محصول</div>
-      <div className={styles.price}>400000T</div>
+      <img className={styles.image} src={prod.imgSrc} alt="t-shirt" />
+      {prod.discount && <div className={styles.badge}> {prod.discount}%</div>}
+      <div className={styles.name}>
+        {prod.name} کد {prod.id}
+      </div>
+      <div className={styles.price}>{prod.price}T</div>
       <div className={styles.preprice}>500000T</div>
     </div>
   );

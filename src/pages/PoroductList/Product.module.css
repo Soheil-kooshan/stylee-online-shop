@@ -9,6 +9,8 @@
 }
 
 .image {
+  height: 85%;
+  object-fit: contain;
   border-radius: 10px;
   cursor: pointer;
   padding: 0.4rem;
@@ -34,11 +36,11 @@
 }
 
 .badge {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #fff;
   position: absolute;
-  bottom: 5rem;
-  right: 2rem;
+  bottom: 25%;
+  left: 10%;
   background-color: rgb(215, 5, 5);
   padding: 0.3rem 0.5rem;
   border-radius: 0.8rem;
