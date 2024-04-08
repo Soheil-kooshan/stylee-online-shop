@@ -497,20 +497,9 @@
       "discount": 16,
       "date": 14020405
     },
+
     {
       "id": 39,
-      "name": "تیشرت",
-      "category": "tshirt",
-      "imgSrc": "src/assets/photos/clothes/t-shirt/5.webp",
-      "price": 580000,
-      "color": "زرد",
-      "material": "پنبه",
-      "sex": "m",
-      "discount": 38,
-      "date": 14020405
-    },
-    {
-      "id": 40,
       "name": "تیشرت",
       "category": "tshirt",
       "imgSrc": "src/assets/photos/clothes/t-shirt/6.webp",
@@ -522,7 +511,7 @@
       "date": 14020405
     },
     {
-      "id": 41,
+      "id": 40,
       "name": "تیشرت",
       "category": "tshirt",
       "imgSrc": "src/assets/photos/clothes/t-shirt/7.webp",
@@ -534,7 +523,7 @@
       "date": 14020405
     },
     {
-      "id": 42,
+      "id": 41,
       "name": "تیشرت",
       "category": "tshirt",
       "imgSrc": "src/assets/photos/clothes/t-shirt/8.webp",
@@ -546,7 +535,7 @@
       "date": 14020405
     },
     {
-      "id": 43,
+      "id": 42,
       "name": "تیشرت",
       "category": "tshirt",
       "imgSrc": "src/assets/photos/clothes/t-shirt/9.webp",
