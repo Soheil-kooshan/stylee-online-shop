@@ -3,60 +3,59 @@
     {
       "id": 1,
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/1.webp",
       "price": 68000,
       "color": "قهوه ای سوخته",
       "material": "چرم مصنوعی",
-      "sex": "m",
       "discount": 25,
       "date": 14020405
     },
     {
       "id": 2,
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/2.webp",
       "price": 449000,
       "color": "قهوه ای",
       "material": "چرم",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 3,
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/3.webp",
       "price": 100000,
       "color": "مشکی",
       "material": "چرم مصنوعی",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 3,
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/4.webp",
       "price": 580000,
       "color": "قهوه ای",
       "material": "چرم",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 4,
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/5.webp",
       "price": 600000,
       "color": "قهوه ای",
       "material": "چرم",
-      "sex": "m",
+
       "discount": 45,
       "date": 14020404
     },
@@ -64,12 +63,12 @@
       "id": 5,
 
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/6.webp",
       "price": 230000,
       "color": "قهوه ای",
       "material": "چرم مصنوعی",
-      "sex": "m",
+
       "discount": null,
       "date": 14020408
     },
@@ -77,12 +76,12 @@
       "id": 6,
 
       "name": "کمربند",
-      "category": "belt",
+      "category": ["کمربند", "کمربند_مردانه"],
       "imgSrc": "src/assets/photos/clothes/belt/7.webp",
       "price": 200000,
       "color": "قهوه ای",
       "material": "چرم مصنوعی",
-      "sex": "m",
+
       "discount": null,
       "date": 14020420
     },
@@ -91,12 +90,12 @@
       "id": 7,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/1.webp",
       "price": 400000,
       "color": "سبز",
       "material": "پلی استر",
-      "sex": null,
+
       "discount": null,
       "date": 14020405
     },
@@ -104,12 +103,12 @@
       "id": 8,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/2.webp",
       "price": 900000,
       "color": "سرمه ای",
       "material": "پشم",
-      "sex": null,
+
       "discount": null,
       "date": 14020431
     },
@@ -117,12 +116,12 @@
       "id": 9,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/3.webp",
       "price": 870000,
       "color": "مشکی",
       "material": "پلی استر",
-      "sex": null,
+
       "discount": 34,
       "date": 14020425
     },
@@ -130,12 +129,12 @@
       "id": 10,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/4.webp",
       "price": 1340000,
       "color": "زرد",
       "material": "پلی استر",
-      "sex": null,
+
       "discount": null,
       "date": 14020405
     },
@@ -143,12 +142,12 @@
       "id": 11,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/5.webp",
       "price": 850000,
       "color": "قرمز",
       "material": "پلی استر",
-      "sex": null,
+
       "discount": 14,
       "date": 14020405
     },
@@ -156,12 +155,12 @@
       "id": 1,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/6.webp",
       "price": 740000,
       "color": "طوسی",
       "material": "پشم",
-      "sex": null,
+
       "discount": 32,
       "date": 14020405
     },
@@ -169,12 +168,12 @@
       "id": 12,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/7.webp",
       "price": 1490000,
       "color": "مشکی",
       "material": "پلی استر",
-      "sex": null,
+
       "discount": 32,
       "date": 14020431
     },
@@ -182,12 +181,12 @@
       "id": 13,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/8.webp",
       "price": 600000,
       "color": "مشکی",
       "material": "پر",
-      "sex": null,
+
       "discount": null,
       "date": 14020405
     },
@@ -195,12 +194,12 @@
       "id": 14,
 
       "name": "کاپشن",
-      "category": "jacket",
+      "category": ["کاپشن", "کاپشن_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jacket/9.webp",
       "price": 1200000,
       "color": "مشکی",
       "material": "پر",
-      "sex": null,
+
       "discount": null,
       "date": 14020405
     },
@@ -208,12 +207,12 @@
       "id": 15,
 
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/1.webp",
       "price": 600000,
       "color": "سرمه ای",
       "material": "کتان",
-      "sex": "m",
+
       "discount": 40,
       "date": 14020405
     },
@@ -221,12 +220,12 @@
       "id": 16,
 
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/2.webp",
       "price": 590000,
       "color": "طوسی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": 40,
       "date": 14020405
     },
@@ -234,12 +233,12 @@
       "id": 17,
 
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/3.webp",
       "price": 4600000,
       "color": "آبی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
@@ -247,204 +246,204 @@
       "id": 18,
 
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/4.webp",
       "price": 570000,
       "color": "آبی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 19,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jean/5.webp",
       "price": 350000,
       "color": "آبی",
       "material": "کتان",
-      "sex": "f",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 20,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/6.webp",
       "price": 890000,
       "color": "آبی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 21,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/7.webp",
       "price": 1180000,
       "color": "مشکی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 22,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/8.webp",
       "price": 450000,
       "color": "آبی",
       "material": "کتان",
-      "sex": "m",
+
       "discount": null,
       "date": 14020427
     },
     {
       "id": 23,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_مردانه"],
       "imgSrc": "src/assets/photos/clothes/jean/9.webp",
       "price": 795000,
       "color": "مشکی",
       "material": "دنیم",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 24,
       "name": "شلوار جین",
-      "category": "jean",
+      "category": ["شلوار", "شلوار_زنانه"],
       "imgSrc": "src/assets/photos/clothes/jean/10.webp",
       "price": 854000,
       "color": "آبی",
       "material": "دنیم",
-      "sex": "f",
+
       "discount": 50,
       "date": 14020405
     },
     {
       "id": 25,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/1.webp",
       "price": 400000,
       "color": "سرمه ای",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 26,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/2.webp",
       "price": 590000,
       "color": "مشکی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": 40,
       "date": 14020429
     },
     {
       "id": 27,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/3.webp",
       "price": 589000,
       "color": "مشکی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 28,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/4.webp",
       "price": 490000,
       "color": "آبی",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 29,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/5.webp",
       "price": 380000,
       "color": "آبی",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 30,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/6.webp",
       "price": 560000,
       "color": "مشکی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 31,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/7.webp",
       "price": 430000,
       "color": "آبی",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 32,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/8.webp",
       "price": 320000,
       "color": "طوسی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 33,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/9.webp",
       "price": 850000,
       "color": "کرمی",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 34,
       "name": "پیراهن",
-      "category": "shirt",
+      "category": ["پیراهن", "پیراهن_مردانه"],
       "imgSrc": "src/assets/photos/clothes/shirt/10.webp",
       "price": 1850000,
       "color": "سفید",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020415
     },
@@ -452,48 +451,48 @@
     {
       "id": 35,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/1.webp",
       "price": 280000,
       "color": "قرمز",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": 50,
       "date": 14020405
     },
     {
       "id": 36,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/2.webp",
       "price": 610000,
       "color": "سرمه ای",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020430
     },
     {
       "id": 37,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_زنانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/3.webp",
       "price": 200000,
       "color": "سفید",
       "material": "پلی استر",
-      "sex": "f",
+
       "discount": 24,
       "date": 14020405
     },
     {
       "id": 38,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/4.webp",
       "price": 430000,
       "color": "مشکی",
       "material": "پلی استر",
-      "sex": "m",
+
       "discount": 16,
       "date": 14020405
     },
@@ -501,48 +500,48 @@
     {
       "id": 39,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/6.webp",
       "price": 390000,
       "color": "مشکی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 40,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/7.webp",
       "price": 600000,
       "color": "مشکی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 41,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/8.webp",
       "price": 400000,
       "color": "طوسی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     },
     {
       "id": 42,
       "name": "تیشرت",
-      "category": "tshirt",
+      "category": ["تیشرت", "تیشرت_مردانه"],
       "imgSrc": "src/assets/photos/clothes/t-shirt/9.webp",
       "price": 450000,
       "color": "طوسی",
       "material": "پنبه",
-      "sex": "m",
+
       "discount": null,
       "date": 14020405
     }
