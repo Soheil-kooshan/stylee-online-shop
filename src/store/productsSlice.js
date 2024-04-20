@@ -9,11 +9,11 @@ export const fetchData = createAsyncThunk("data/fetch", async () => {
 
 const productsReducer = createSlice({
   name: "products",
-  initialState: { data: [] },
+  initialState: { PureData: [] },
 
   extraReducers: (builder) =>
     builder.addCase(fetchData.fulfilled, (state, action) => {
-      state.data = action.payload;
+      state.PureData = action.payload;
     }),
 });
 
