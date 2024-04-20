@@ -3,11 +3,7 @@ import styles from "./Product.module.css";
 
 function Product({ prod }) {
   return (
-<<<<<<< HEAD
     <Link className={styles.container} to={`${prod.id}`}>
-=======
-    <div className={styles.container}>
->>>>>>> 351f7c579cd74a2b75cb1bf60acd5f755bb91c41
       <img className={styles.image} src={prod.imgSrc} alt="t-shirt" />
       {prod.discount && <div className={styles.badge}> {prod.discount}%</div>}
       <div className={styles.name}>
