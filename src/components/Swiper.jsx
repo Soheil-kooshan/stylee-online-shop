@@ -1,5 +1,6 @@
 import "./Swiper.css";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { register } from "swiper/element/bundle";
 
 function Swiper(props) {
@@ -110,25 +111,27 @@ function Swiper(props) {
               {prods.map((prod) => {
                 return (
                   <swiper-slide class="swiper-slide" key={prod.src}>
-                    <li>
-                      <img
-                        className="image"
-                        src={prod.imgSrc}
-                        alt={prod.name}
-                      />
-                      <span className="price">
-                        {discountCalculator(prod)} T
-                      </span>
-
-                      {prod.discount !== null ? (
-                        <span>
-                          <span className="preprice">{prod.price}</span>
-                          <span className="badge">{prod.discount}%</span>
+                    <Link to={`ProductsList/${prod.id}`}>
+                      <li>
+                        <img
+                          className="image"
+                          src={prod.imgSrc}
+                          alt={prod.name}
+                        />
+                        <span className="price">
+                          {discountCalculator(prod)} T
                         </span>
-                      ) : (
-                        ""
-                      )}
-                    </li>
+
+                        {prod.discount !== null ? (
+                          <span>
+                            <span className="preprice">{prod.price}</span>
+                            <span className="badge">{prod.discount}%</span>
+                          </span>
+                        ) : (
+                          ""
+                        )}
+                      </li>
+                    </Link>
                   </swiper-slide>
                 );
               })}
