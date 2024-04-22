@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 function AddProduct(state, action) {
   state.products = [...state.products, action.payload];
-  console.log(state.products);
 }
 
 function RemoveProduct(state, action) {}
