@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import styles from "./ProdInfo.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { AddAction, RemoveAction } from "../../store/cartSlice";
 
 function ProdInfo() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ function ProdInfo() {
   });
   const product = res[0];
   console.log(product);
+  const dispatch = useDispatch();
 
   return (
     <div className={styles.container}>
@@ -22,7 +24,9 @@ function ProdInfo() {
           <li>رنگ : {product.color}</li>
           <li>سایز : large</li>
           <div className={styles.price}>{product.price}T</div>
-          <button>افزودن به سبد</button>
+          <button onClick={() => dispatch(AddAction(product))}>
+            افزودن به سبد
+          </button>
         </ul>
       </div>
     </div>
