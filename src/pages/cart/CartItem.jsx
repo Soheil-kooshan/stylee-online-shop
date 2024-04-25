@@ -10,7 +10,7 @@ function CartItem({ name, image, price, discount }) {
       <div className={styles.infoBox}>
         <span className={styles.name}>{name}</span>
         <span className={styles.discount}>
-          تخفیف: {discount == null ? "ندارد" : discount}
+          تخفیف: {discount == null ? "ندارد" : `%${discount}`}
         </span>
         <span className={styles.price}>قیمت : {price}</span>
       </div>

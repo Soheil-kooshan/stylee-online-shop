@@ -1,11 +1,12 @@
 import styles from "./Bill.module.css";
+import { discountCalc } from "../../helper/discount";
 
 function Bill({ cartItems }) {
   const totalPrice = cartItems.reduce((total, item) => {
     return (total += item.price);
   }, 0);
   const totaldiscount = cartItems.reduce((total, item) => {
-    return (total += item.discount);
+    return (total += discountCalc(item.price, item.discount));
   }, 0);
 
   const finalPrice = totalPrice - totaldiscount;
