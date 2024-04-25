@@ -4,7 +4,13 @@ function AddProduct(state, action) {
   state.products = [...state.products, action.payload];
 }
 
-function RemoveProduct(state, action) {}
+function RemoveProduct(state, action) {
+  const index = state.products
+    .map((item) => item.id)
+    .indexOf(action.payload.id);
+
+  state.products.splice(index, 1);
+}
 
 const cartReducer = createSlice({
   name: "cart",
