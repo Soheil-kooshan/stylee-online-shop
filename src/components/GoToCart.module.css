@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 2rem;
+}
+
+.cart_icon {
+  position: absolute;
+  width: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  text-align: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(14, 107, 1);
+  color: white;
+  border-radius: 0.7rem;
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    grid-area: login-cart;
+    position: relative;
+    box-shadow: none;
+    top: 2rem;
+    right: 1rem;
+  }
+}

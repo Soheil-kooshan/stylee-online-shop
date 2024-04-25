@@ -2,16 +2,17 @@ import { useParams } from "react-router-dom";
 import styles from "./ProdInfo.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { AddAction, RemoveAction } from "../../store/cartSlice";
+import { priceAfterDiscount } from "../../helper/discount";
 
 function ProdInfo() {
   const { id } = useParams();
   const arrays = useSelector((state) => state.products.PureData.products);
   console.log(arrays);
-  const res = arrays.filter((product) => {
+  const product = arrays.find((product) => {
     return product.id == id;
   });
-  const product = res[0];
   console.log(product);
+
   const dispatch = useDispatch();
 
   return (
@@ -23,7 +24,9 @@ function ProdInfo() {
           <li>جنس : {product.material}</li>
           <li>رنگ : {product.color}</li>
           <li>سایز : large</li>
-          <div className={styles.price}>{product.price}T</div>
+          <div className={styles.price}>
+            {priceAfterDiscount(product.price, product.discount)}T
+          </div>
           <button onClick={() => dispatch(AddAction(product))}>
             افزودن به سبد
           </button>

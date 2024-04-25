@@ -2,6 +2,7 @@ import "./Swiper.css";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { register } from "swiper/element/bundle";
+import { priceAfterDiscount } from "../helper/discount";
 
 function Swiper(props) {
   const [prods, setProds] = useState([]);
@@ -111,7 +112,7 @@ function Swiper(props) {
               {prods.map((prod) => {
                 return (
                   <swiper-slide class="swiper-slide" key={prod.src}>
-                    <Link to={`ProductsList/${prod.id}`}>
+                    <Link to={`Products/${prod.id}`}>
                       <li>
                         <img
                           className="image"
@@ -119,7 +120,7 @@ function Swiper(props) {
                           alt={prod.name}
                         />
                         <span className="price">
-                          {discountCalculator(prod)} T
+                          {priceAfterDiscount(prod.price, prod.discount)} T
                         </span>
 
                         {prod.discount !== null ? (

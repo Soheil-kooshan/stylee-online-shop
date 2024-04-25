@@ -24,6 +24,7 @@ function Cart() {
             {cartItems.map((item) => {
               return (
                 <CartItem
+                  item={item}
                   name={item.name}
                   image={item.imgSrc}
                   price={item.price}

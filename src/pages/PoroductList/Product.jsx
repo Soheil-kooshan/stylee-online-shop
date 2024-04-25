@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Product.module.css";
+import { priceAfterDiscount } from "../../helper/discount";
 
 function Product({ prod }) {
   return (
@@ -9,8 +10,10 @@ function Product({ prod }) {
       <div className={styles.name}>
         {prod.name} کد {prod.id}
       </div>
-      <div className={styles.price}>{prod.price}T</div>
-      <div className={styles.preprice}>500000T</div>
+      <div className={styles.price}>
+        {priceAfterDiscount(prod.price, prod.discount)}T
+      </div>
+      {prod.discount && <div className={styles.preprice}>{prod.price}</div>}
     </Link>
   );
 }
