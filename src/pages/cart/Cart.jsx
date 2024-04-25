@@ -8,22 +8,36 @@ function Cart() {
   console.log(cartItems);
 
   return (
-    <div className={styles.container}>
-      <div>
-        {cartItems.map((item) => {
-          return (
-            <CartItem
-              name={item.name}
-              image={item.imgSrc}
-              price={item.price}
-              discount={item.discount}
-              key={item.id}
-            />
-          );
-        })}
-      </div>
-      <Bill cartItems={cartItems} />
-    </div>
+    <>
+      {cartItems.length === 0 ? (
+        <div className={styles.isEmpty}>
+          <img
+            className={styles.empty_image}
+            src="src\assets\icons\emptybox.svg"
+            alt="empty box"
+          />
+          <p className={styles.empty_text}>سبد خرید شما خالی است! </p>
+        </div>
+      ) : (
+        <div className={styles.container}>
+          <div>
+            {cartItems.map((item) => {
+              return (
+                <CartItem
+                  name={item.name}
+                  image={item.imgSrc}
+                  price={item.price}
+                  discount={item.discount}
+                  id={item.id}
+                  key={item.id}
+                />
+              );
+            })}
+          </div>
+          <Bill cartItems={cartItems} />
+        </div>
+      )}
+    </>
   );
 }
 

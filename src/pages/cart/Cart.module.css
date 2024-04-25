@@ -3,6 +3,23 @@
   flex-direction: column;
 }
 
+.isEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty_image {
+  max-height: 25rem;
+}
+
+.empty_text {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
 @media screen and (min-width: 560px) {
   .container {
     flex-direction: row;
