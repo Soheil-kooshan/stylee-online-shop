@@ -11,15 +11,18 @@ function Cart() {
     <div className={styles.container}>
       <div>
         {cartItems.map((item) => {
-          <CartItem
-            name={item.name}
-            image={item.imgSrc}
-            price={item.price}
-            discount={item.discount}
-          />;
+          return (
+            <CartItem
+              name={item.name}
+              image={item.imgSrc}
+              price={item.price}
+              discount={item.discount}
+              key={item.id}
+            />
+          );
         })}
       </div>
-      <Bill cartItems={cartItems}/>
+      <Bill cartItems={cartItems} />
     </div>
   );
 }
