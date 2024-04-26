@@ -17,5 +17,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
 :root {
 }
