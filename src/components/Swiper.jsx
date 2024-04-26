@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { register } from "swiper/element/bundle";
 import { priceAfterDiscount } from "../helper/discount";
+import tooman from "../helper/tooman";
 
 function Swiper(props) {
   const [prods, setProds] = useState([]);
@@ -120,12 +121,16 @@ function Swiper(props) {
                           alt={prod.name}
                         />
                         <span className="price">
-                          {priceAfterDiscount(prod.price, prod.discount)} T
+                          {tooman(
+                            priceAfterDiscount(prod.price, prod.discount)
+                          )}
                         </span>
 
                         {prod.discount !== null ? (
                           <span>
-                            <span className="preprice">{prod.price}</span>
+                            <span className="preprice">
+                              {tooman(prod.price)}
+                            </span>
                             <span className="badge">{prod.discount}%</span>
                           </span>
                         ) : (
