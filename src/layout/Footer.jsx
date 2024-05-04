@@ -1,16 +1,25 @@
 import styles from "./Footer.module.css";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.footer}>
         <ul>
-          <li>خرید</li>
-          <li>تیشرت</li>
-          <li>کاپشن</li>
-          <li>کمبرند</li>
-          <li>شلوار</li>
-          <li>پیراهن</li>
+          <li>
+            <Link to={"Products/category/کاپشن"}>کاپشن</Link>
+          </li>
+          <li>
+            <Link to={"Products/category/تیشرت"}>تیشرت</Link>
+          </li>
+          <li>
+            <Link to={"Products/category/شلوار"}>شلوار</Link>
+          </li>
+          <li>
+            <Link to={"Products/category/پیراهن"}>پیراهن</Link>
+          </li>
+          <li>
+            <Link to={"Products/category/کمربند"}>کمربند</Link>
+          </li>
         </ul>
         <ul>
           <li>خدمات به مشتریان</li>

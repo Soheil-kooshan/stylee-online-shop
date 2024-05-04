@@ -33,6 +33,9 @@
   fill: aliceblue;
 }
 
+.footer a {
+  color: #aaa;
+}
 @media screen and (min-width: 760px) {
   .footer {
     grid-template: auto/auto auto auto auto;

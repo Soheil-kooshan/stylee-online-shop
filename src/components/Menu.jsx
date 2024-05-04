@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Menu.module.css";
+import { Link } from "react-router-dom";
 function Menu() {
   const [isOpen, setIsOpen] = useState(false);
   function handleIsOpen() {
@@ -35,11 +36,26 @@ function Menu() {
                   alt="arrow"
                 />
                 <ul className={styles.mob_sub_menu}>
-                  <li>کاپشن</li>
-                  <li>تیشرت</li>
-                  <li>شلوار</li>
-                  <li>پیراهن</li>
-                  <li>کمربند</li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -49,9 +65,18 @@ function Menu() {
                   alt="arrow"
                 />
                 <ul className={styles.mob_sub_menu}>
-                  <li>کاپشن</li>
-                  <li>تیشرت</li>
-                  <li>شلوار</li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/کاپشن_زنانه"}>کاپشن</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/تیشرت_زنانه"}>تیشرت</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to={"Products/category/شلوار_زنانه"}>شلوار</Link>
+                  </li>
                 </ul>
               </li>
               <li>بچه گانه</li>
@@ -72,11 +97,21 @@ function Menu() {
                 alt="arrow"
               />
               <ul className={styles.desk_sub_menu}>
-                <li>کاپشن</li>
-                <li>تیشرت</li>
-                <li>شلوار</li>
-                <li>پیراهن</li>
-                <li>کمربند</li>
+                <li>
+                  <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
+                </li>
               </ul>
             </li>
 
@@ -87,9 +122,15 @@ function Menu() {
                 alt="arrow"
               />
               <ul className={styles.desk_sub_menu}>
-                <li>کاپشن</li>
-                <li>تیشرت</li>
-                <li>شلوار</li>
+                <li>
+                  <Link to={"Products/category/کاپشن_زنانه"}>کاپشن</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/تیشرت_زنانه"}>تیشرت</Link>
+                </li>
+                <li>
+                  <Link to={"Products/category/شلوار_زنانه"}>شلوار</Link>
+                </li>
               </ul>
             </li>
             <li>بچه گانه</li>

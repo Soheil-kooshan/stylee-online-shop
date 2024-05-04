@@ -15,7 +15,7 @@ function App() {
       element: <Applayout />,
       children: [
         { path: "/", element: <Landing /> },
-        { path: "/Products", element: <ProductsList /> },
+        { path: "/Products/category/:cat", element: <ProductsList /> },
         { path: "/Cart", element: <Cart /> },
         { path: "/Products/:id", element: <ProdInfoPage /> },
       ],
