@@ -3,10 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./style/normalize.css";
 import "./style/style.css";
-import { BrowserRouter } from "react-router-dom";
-import store from "./store/store.js";
+import { store } from "./store/store.js";
 import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist";
+import { PersistGate } from "redux-persist/integration/react";
 import { persistor } from "./store/store.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
