@@ -49,6 +49,9 @@
 }
 
 .desk_sub_menu li {
+  padding: 0;
+}
+.desk_sub_menu a {
   padding: 0.7rem 2rem;
 }
 
@@ -77,6 +80,9 @@
 }
 
 .mob_menu li {
+  padding: 1rem 2rem 1rem 0;
+}
+.mob_menu a {
   padding: 1rem 2rem 1rem 0;
 }
 

@@ -36,26 +36,15 @@ function Menu() {
                   alt="arrow"
                 />
                 <ul className={styles.mob_sub_menu}>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
-                  </li>
+                  <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
+
+                  <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
+
+                  <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
+
+                  <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
+
+                  <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
                 </ul>
               </li>
               <li>
@@ -65,18 +54,11 @@ function Menu() {
                   alt="arrow"
                 />
                 <ul className={styles.mob_sub_menu}>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/کاپشن_زنانه"}>کاپشن</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/تیشرت_زنانه"}>تیشرت</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to={"Products/category/شلوار_زنانه"}>شلوار</Link>
-                  </li>
+                  <Link to={"Products/category/کاپشن_زنانه"}>کاپشن</Link>
+
+                  <Link to={"Products/category/تیشرت_زنانه"}>تیشرت</Link>
+
+                  <Link to={"Products/category/شلوار_زنانه"}>شلوار</Link>
                 </ul>
               </li>
               <li>بچه گانه</li>
@@ -97,21 +79,15 @@ function Menu() {
                 alt="arrow"
               />
               <ul className={styles.desk_sub_menu}>
-                <li>
-                  <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
-                </li>
-                <li>
-                  <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
-                </li>
-                <li>
-                  <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
-                </li>
-                <li>
-                  <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
-                </li>
-                <li>
-                  <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
-                </li>
+                <Link to={"Products/category/کاپشن_مردانه"}>کاپشن</Link>
+
+                <Link to={"Products/category/تیشرت_مردانه"}>تیشرت</Link>
+
+                <Link to={"Products/category/شلوار_مردانه"}>شلوار</Link>
+
+                <Link to={"Products/category/پیراهن_مردانه"}>پیراهن</Link>
+
+                <Link to={"Products/category/کمربند_مردانه"}>کمربند</Link>
               </ul>
             </li>
 
