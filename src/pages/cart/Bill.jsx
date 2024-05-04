@@ -1,5 +1,6 @@
 import styles from "./Bill.module.css";
 import { discountCalc } from "../../helper/discount";
+import tooman from "../../helper/tooman";
 
 function Bill({ cartItems }) {
   const totalPrice = cartItems.reduce((total, item) => {
@@ -13,9 +14,9 @@ function Bill({ cartItems }) {
 
   return (
     <div className={styles.container}>
-      <span>کل مبلغ :{totalPrice} </span>
-      <span>تخفیف کل:{totaldiscount}</span>
-      <span>مبلغ قابل پرداخت:{finalPrice}</span>
+      <span>کل مبلغ :{tooman(totalPrice)} </span>
+      <span>تخفیف کل:{tooman(totaldiscount)}</span>
+      <span>مبلغ قابل پرداخت:{tooman(finalPrice)}</span>
       <button>تایید و پرداخت</button>
     </div>
   );

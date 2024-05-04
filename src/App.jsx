@@ -9,9 +9,7 @@ import Applayout from "./layout/Applayout";
 import { fetchData } from "./store/productsSlice";
 import { useDispatch } from "react-redux";
 import tooman from "./helper/tooman";
-
 function App() {
-  console.log(tooman(10000));
   const router = createBrowserRouter([
     {
       element: <Applayout />,

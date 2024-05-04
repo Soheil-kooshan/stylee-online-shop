@@ -1,5 +1,8 @@
 .logo {
+  grid-area: logo;
+}
+
+.logo img {
   width: clamp(30%, 90%, 700px);
   height: 10vw;
-  grid-area: logo;
 }

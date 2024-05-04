@@ -1,6 +1,7 @@
 import styles from "./CartItem.module.css";
 import { useDispatch } from "react-redux";
 import { RemoveAction } from "../../store/cartSlice";
+import tooman from "../../helper/tooman";
 
 function CartItem({ item, name, image, price, discount, id }) {
   console.log(name);
@@ -18,7 +19,7 @@ function CartItem({ item, name, image, price, discount, id }) {
         <span className={styles.discount}>
           تخفیف: {discount == null ? "ندارد" : `%${discount}`}
         </span>
-        <span className={styles.price}>قیمت : {price}</span>
+        <span className={styles.price}>قیمت : {tooman(price)}</span>
       </div>
       <img
         className={styles.delete}

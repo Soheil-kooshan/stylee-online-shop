@@ -41,6 +41,10 @@
   background-color: rgb(0, 103, 0);
 }
 
+.container p {
+  padding: 0 0.5rem;
+}
+
 @media screen and (min-width: 560px) {
   .container {
     width: 100%;
@@ -71,7 +75,7 @@
     font-size: 2rem;
     padding: 1rem;
   }
-  
+
   .container button {
     position: absolute;
     margin-right: 1rem;
