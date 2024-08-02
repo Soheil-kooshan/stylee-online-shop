@@ -7,7 +7,7 @@ function Login() {
       <div onClick={() => setShowLogin(true)} className={styles.loginIcon}>
         <p> ورود</p>
         <img
-          src="src/assets/icons/login_FILL0_wght400_GRAD0_opsz24.svg"
+          src="/src/assets/icons/login_FILL0_wght400_GRAD0_opsz24.svg"
           alt="login"
         />
       </div>
@@ -16,7 +16,7 @@ function Login() {
           <img
             onClick={() => setShowLogin(false)}
             className={styles.close}
-            src="src\assets\icons\close.svg"
+            src="/src/assets/icons/close.svg"
             alt="close"
           />
           <p className={styles.welcome}>خوش آمدید</p>

@@ -4,7 +4,7 @@ import { RemoveAction } from "../../store/cartSlice";
 import tooman from "../../helper/tooman";
 
 function CartItem({ item, name, image, price, discount, id }) {
-  console.log(name);
+  console.log(image);
 
   const dispatch = useDispatch();
   return (

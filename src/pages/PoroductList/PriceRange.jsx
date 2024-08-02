@@ -1,13 +1,14 @@
 import { useRef, useState } from "react";
 import styles from "./PriceRange.module.css";
+import tooman from "../../helper/tooman";
 
 function PriceRange() {
   const [minValue, setMin] = useState(0);
-  const [maxValue, setMax] = useState(10000);
+  const [maxValue, setMax] = useState(2000000);
   const [show, setShow] = useState(false);
 
   const showMin = useRef(0);
-  const showMax = useRef(10000);
+  const showMax = useRef(2000000);
 
   if (Number(minValue) <= Number(maxValue)) {
     showMin.current = minValue;
@@ -22,11 +23,11 @@ function PriceRange() {
       <div className={styles.priceContent}>
         <div className={styles.priceContainer}>
           <label>Min</label>
-          <p className={styles.minValue}>{showMin.current}</p>
+          <div className={styles.minValue}>{tooman(showMin.current)}</div>
         </div>
         <div className={styles.priceContainer}>
           <label>Max</label>
-          <p className={styles.maxValue}>{showMax.current}</p>
+          <div className={styles.maxValue}>{tooman(showMax.current)}</div>
         </div>
       </div>
       <div className={styles.rangeSlider}>
@@ -35,7 +36,7 @@ function PriceRange() {
           type={"range"}
           className={styles.minPrice}
           min={0}
-          max={10000}
+          max={2000000}
           step={10}
           onChange={(e) => {
             setMin(e.target.value);
@@ -45,7 +46,7 @@ function PriceRange() {
           type={"range"}
           className={styles.minPrice}
           min={0}
-          max={10000}
+          max={2000000}
           step={10}
           defaultValue={10000}
           onChange={(e) => {

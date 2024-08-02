@@ -4,7 +4,7 @@ function Logo() {
   return (
     <div className={styles.logo}>
       <Link to={"/"}>
-        <img src="src/assets/logo/stylee.svg" alt="stylee logo" />
+        <img src="/src/assets/logo/stylee.svg" alt="stylee logo" />
       </Link>
     </div>
   );

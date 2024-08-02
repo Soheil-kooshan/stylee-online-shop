@@ -10,7 +10,7 @@ function FilterBox() {
       <h3>فیلتر ها</h3>
       <p className={styles.filterItem} onClick={() => setShowPrice(!showPrice)}>
         بر اساس قیمت
-        <img src="src\assets\icons\arrow-down-svgrepo-com.svg" alt="arrow" />
+        <img src="/src\assets\icons\arrow-down-svgrepo-com.svg" alt="arrow" />
       </p>
       {showPrice && <PriceRange />}
       <div className={styles.buttonContainer}>

@@ -35,13 +35,13 @@ function Footer() {
         <ul>
           <li>با ما همراه باشید</li>
           <li>
-            <img src="src\assets\icons\instagram.svg" alt="instagram" />
+            <img src="/src\assets\icons\instagram.svg" alt="instagram" />
           </li>
           <li>
-            <img src="src\assets\icons\telegram.svg" alt="telegram" />
+            <img src="/src\assets\icons\telegram.svg" alt="telegram" />
           </li>
           <li>
-            <img src="src\assets\icons\whatsapp.svg" alt="whatsapp" />
+            <img src="/src\assets\icons\whatsapp.svg" alt="whatsapp" />
           </li>
         </ul>
       </div>

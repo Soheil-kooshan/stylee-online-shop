@@ -22,6 +22,7 @@ function Cart() {
         <div className={styles.container}>
           <div>
             {cartItems.map((item) => {
+              console.log(item.imgSrc);
               return (
                 <CartItem
                   item={item}

@@ -1,7 +1,7 @@
 @font-face {
   font-family: "yekan";
-  src: url("src/style/fonts/Vazir.woff") format("woff"),
-    url("src/style/fonts/Vazir.woff2") format("woff2");
+  src: url("/src/style/fonts/Vazir.woff") format("woff"),
+    url("/src/style/fonts/Vazir.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

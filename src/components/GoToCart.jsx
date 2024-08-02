@@ -8,7 +8,7 @@ function GoToCart() {
       <Link to={"cart"}>
         <img
           className={styles.cart_icon}
-          src="src\assets\icons\shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+          src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
           alt="shopping cart"
         />
         <div className={styles.number}>{number}</div>
